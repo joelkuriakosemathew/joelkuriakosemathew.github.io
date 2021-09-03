@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Userhome</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/userhome.css">
+        <script src="transaction1.js"></script>
+        <style>
+            /* link background */
+            body {
+                background-image: url('images/ibrahim-boran-r0zrjWheW2g-unsplash.jpg');
+                background-size: cover;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- form -->
+            <form class="form" onsubmit="return validateForm()" method="POST">
+                    <img src="images/avatar.png" alt="">
+                <h1><u>YOUR TRANSACTIONS</u></h1>
+                <div>
+                    <div><br>
+                        <!-- account number -->
+                        <div class="input-group">
+                            <input type="text" name="acno" id="acno" required>    
+                            <label for="acno">Account Number:</label> 
+                        </div>
+                        <!-- pin -->
+                        <div class="input-group">
+                            <input type="text" name="pin" id="pin" required>    
+                            <label for="pin">Pin:</label> 
+                        </div>
+                        <!-- amount -->
+                        <div class="input-group">
+                            <input type="text" name="amt" id="amt" required>    
+                            <label for="amt">Amount:</label> 
+                        </div>
+                        <!-- deposit withdraw button -->
+                        <button type="button" onclick="Bank.deposit()" class="deposit-btn">Deposit</button>
+                        <button type="button" onclick="Bank.withdraw()" class="withdraw-btn">Withdraw</button><br>
+                        <!-- back button -->
+                        <a href="Useraccount.html" class="back-btn">Back</a>
+                    </div>
+                </div>
+            </form>
+            <!-- form end -->
+        </div>
+    </body>
+</html>
+
+
+        
+    
+
+
+
+
+
+
+
+
