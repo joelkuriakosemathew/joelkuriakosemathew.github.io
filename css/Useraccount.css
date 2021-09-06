@@ -1,0 +1,94 @@
+/* styling body */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* styling background */
+body {
+    background-image:linear-gradient(rgba(65, 35, 35, 0.5),rgba(0,0,0,0.5)), url('images/ibrahim-boran-r0zrjWheW2g-unsplash.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+/* .main {
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+} */
+/* styling topbar */
+.topbar {
+    overflow: hidden;
+}
+.topbar a {
+    float: right;
+    color: brown;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+/* styling form tag */
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* styling form */
+.form {
+    position: relative;
+    height: auto;
+    width: 100%;
+    max-width: 900px;
+    padding: 30px 90px 20px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+.form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    pointer-events: none;
+}
+/* styling images */
+.form img {
+    position: absolute;
+    top: -50px;
+    left: calc(50%-50px);
+    width: 150px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+}
+/* styling heading */
+.form h1 {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    color: tomato;
+}
+/* styling form input */
+.form .input-group {
+    position: relative;
+}
+.form .input-group {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+}
