@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LOGIN</title>
+        <link rel="stylesheet" type="text/css" href="css/Login.css">
+        <script src="transaction1.js"></script>
+        <style>
+            /* linking background */
+            body {
+                background-image: url('images/eduardo-soares-utWyPB8_FU8-unsplash.jpg');
+                background-size: cover;
+                font-family: Arial, Helvetica, sans-serif;
+                background-position: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login-wrapper">
+            <!-- form -->
+            <form class="form" onsubmit="return validateForm()" method="POST">
+                <img src="images/avatar.png" alt="">
+                <h1><u>LOGIN</u></h1>
+                <!-- account number -->
+                <div class="input-group">
+                    <input type="text" name="acno" id="acno" required>
+                    <label for="acno">Account Number:</label>
+                </div>
+                <!-- password -->
+                <div class="input-group">
+                    <input type="password" name="pwd" id="pwd" required>
+                    <label for="pwd">Password:</label>
+                </div>
+                <!-- forgot password -->
+                <div class="pass">
+                    <a href="#">Forgot Password?</a>
+                </div><br>
+                <!-- button -->
+                <button type="button" onclick="Bank.login()" class="submit-btn">Login</button><br><br><br>
+                <!-- dont have account -->
+                <div class="signup">
+                    Don't have account?
+                    <a href="Registration.html">Register Now</a>
+                </div>
+            </form>
+            <!-- form end -->
+        </div>
+    </body>
+</html>
